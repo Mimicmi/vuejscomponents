@@ -10,8 +10,10 @@
 <body>
     <div id="app">
         <h1>{{ title }}</h1>
-        <mycomponent></mycomponent>
-        <mycomponent></mycomponent>
+        <mycomponent :myprops="property" ></mycomponent>
+        <!--pour émettre on utilise le @ OU v-on(donc un evenement)-->
+        <!--on peut ajouter un $event dans la fonction-->
+        <mycomponent @hello-parent="wakeUp()"></mycomponent>
         <mycomponent></mycomponent>
     </div>
 
