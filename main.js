@@ -15,6 +15,9 @@ const RootComponent = {
     },
     mounted() {
         console.log("MOUNTED .. !");
+    },
+    beforeUpdate() {
+        console.log("BEFORE UPDATE .!.");
     }
 };
 
