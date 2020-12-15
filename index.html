@@ -10,10 +10,18 @@
 <body>
     <div id="app">
         <h1>{{ title }}</h1>
+        <mycomponent></mycomponent>
     </div>
 
 
-<script src="https://unpkg.com/vue@next"></script>
-<script src="main.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+    <script src="mycomponent.js"></script>
+    <script>
+        /*mount doit être appelé après toutes les déclarations de
+        * composants
+        * */
+        const vm = app.mount("#app");
+    </script>
 </body>
 </html>
